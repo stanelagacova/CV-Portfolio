@@ -1,0 +1,404 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #edf1f6;
+    color: #253047;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #2459b6;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.page {
+    max-width: 1050px;
+    margin: 38px auto;
+    background-color: #ffffff;
+    box-shadow: 0 8px 30px rgba(32, 51, 85, 0.07);
+}
+
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+    padding: 48px 54px;
+    background-color: #f5f7fb;
+    border-bottom: 1px solid #e0e6f0;
+}
+
+.profile {
+    width: 205px;
+    height: 205px;
+    object-fit: cover;
+    object-position: center 24%;
+    border-radius: 50%;
+    border: 6px solid white;
+    flex-shrink: 0;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.eyebrow {
+    color: #5271a5;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+h1 {
+    color: #162947;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    margin-bottom: 7px;
+}
+
+.subtitle {
+    color: #365987;
+    font-weight: bold;
+    margin-bottom: 14px;
+}
+
+.intro {
+    margin-bottom: 12px;
+}
+
+.github-profile {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+
+
+main {
+    padding: 0 54px 35px;
+}
+
+
+
+.contact-line {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 35px;
+    padding: 21px 0;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 13px;
+}
+
+.contact-line strong {
+    color: #203e6d;
+    margin-right: 6px;
+}
+
+
+
+.section {
+    margin-top: 32px;
+}
+
+h2 {
+    color: #244a87;
+    font-size: 19px;
+    margin-bottom: 17px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #d9e4f4;
+}
+
+
+
+.projects-intro {
+    color: #66758c;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.project-list {
+    display: grid;
+    gap: 13px;
+}
+
+.project-card {
+    display: flex;
+    gap: 20px;
+    padding: 19px;
+    background-color: #ffffff;
+    border: 1px solid #dce4f0;
+    border-radius: 8px;
+    transition: border-color 0.2s;
+}
+
+.project-card:hover {
+    border-color: #7c9dd2;
+}
+
+.project-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 115px;
+    min-width: 115px;
+    min-height: 105px;
+    background-color: #e2ebfa;
+    color: #2b5ca9;
+    border-radius: 6px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.project-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.project-info h3 {
+    font-size: 17px;
+    margin-bottom: 5px;
+    color: #1c2d48;
+    overflow-wrap: anywhere;
+}
+
+.project-info p {
+    font-size: 13px;
+    margin-bottom: 6px;
+    color: #53647b;
+}
+
+.tech {
+    display: block;
+    font-size: 12px;
+    color: #73829a;
+    margin-bottom: 6px;
+}
+
+.project-info a {
+    display: inline-block;
+    margin-top: 7px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #2459b6;
+}
+
+.projects-footer {
+    font-size: 13px;
+    color: #66758c;
+    margin-top: 15px;
+}
+
+.projects-footer a {
+    font-weight: bold;
+}
+
+.loading,
+.error-message {
+    color: #66758c;
+    font-size: 14px;
+    padding: 15px 0;
+}
+
+
+
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+}
+
+
+
+.entry {
+    margin-bottom: 19px;
+}
+
+.entry h3 {
+    color: #1c2d48;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 3px;
+}
+
+.entry p {
+    font-size: 13px;
+    margin-bottom: 3px;
+}
+
+.entry .company {
+    color: #496996;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tags span {
+    background-color: #edf3fb;
+    border: 1px solid #dce6f4;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+
+
+.skills-list {
+    padding-left: 20px;
+    font-size: 13px;
+}
+
+.skills-list li {
+    margin-bottom: 5px;
+}
+
+
+
+.simple-list {
+    padding-left: 20px;
+    columns: 2;
+    column-gap: 40px;
+}
+
+.simple-list li {
+    break-inside: avoid;
+    margin-bottom: 8px;
+    font-size: 13px;
+}
+
+
+
+footer {
+    padding: 22px 54px;
+    background-color: #f5f7fb;
+    color: #7a8699;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+
+@media (max-width: 850px) {
+
+    .hero {
+        gap: 24px;
+        padding: 35px;
+    }
+
+    .profile {
+        width: 165px;
+        height: 165px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    main {
+        padding: 0 35px 30px;
+    }
+
+    .two-columns {
+        gap: 28px;
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .page {
+        margin: 0;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 22px;
+        gap: 16px;
+    }
+
+    .profile {
+        width: 155px;
+        height: 155px;
+    }
+
+    h1 {
+        font-size: 29px;
+    }
+
+    .subtitle {
+        font-size: 13px;
+    }
+
+    .intro {
+        font-size: 13px;
+    }
+
+    main {
+        padding: 0 22px 25px;
+    }
+
+    .contact-line {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .two-columns {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .project-card {
+        gap: 13px;
+        padding: 13px;
+    }
+
+    .project-image {
+        width: 65px;
+        min-width: 65px;
+        min-height: 80px;
+        font-size: 19px;
+    }
+
+    .project-info h3 {
+        font-size: 15px;
+    }
+
+    .simple-list {
+        columns: 1;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+}
